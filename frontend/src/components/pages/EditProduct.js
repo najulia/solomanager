@@ -4,6 +4,9 @@ import styles from "./EditProduct.module.css";
 import { useState, useEffect } from "react";
 import Api from "../../services/Api";
 import { useNavigate, useParams } from "react-router";
+import EditImg from "../../media/edit.svg"
+import Container from "../layouts/Container";
+import ButtonLink from "../layouts/ButtonLink";
 
 function EditProduct() {
     const { id } = useParams();
@@ -77,8 +80,15 @@ function EditProduct() {
     }
 
     return (
-        <form className={styles.form} onSubmit={handleSubmit}>
-            <h1>Editar Produto</h1>
+        <>
+        <Container>
+            <div className={styles.editProductContainer}>
+            <div className={styles.imgContainer}>
+            <img src={EditImg} alt="form illustration" />
+            </div>
+            <div className={styles.formContainer}>
+            <form className={styles.form} onSubmit={handleSubmit}>
+            <h3>Editar Produto</h3>
             
             <Input
                 type="text"
@@ -124,7 +134,12 @@ function EditProduct() {
 
             <SubmitButton text="Salvar alterações" />
             <SubmitButton text="Excluir permanentemente" onClick={deleteProduct} />
+            <ButtonLink to="/me/products" text="Voltar" variant="transparent" />
         </form>
+            </div>
+           </div>
+            </Container>
+        </>
     );
 }
 
