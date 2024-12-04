@@ -1,9 +1,49 @@
-.form{
+.newProductContainer {
     display: flex;
-    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    padding: 0.5em;  
-    gap: 1em;
-    margin: 0 auto;
+    padding: 2em;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+
+  .newProductContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    gap: 1em; 
+  }
+
+  .newProductContainer form h3{
+   color:#3760BF
+  }
+
+.imgContainer  {
+    width: 25%;
+    overflow: hidden; 
+    position: relative;
 }
+
+.imgContainer img {
+    width: 100%; 
+ } 
+
+  .formTitle {
+    text-align: center;
+    width: 100%;
+    color: #3760BF;
+  }
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    text-align: center;
+  }
+
+  .formBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }

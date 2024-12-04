@@ -8,6 +8,9 @@ import Api from '../../services/Api';
 import { useEffect, useState} from 'react';
 import { useNavigate, useParams } from "react-router";
 import { useAuth } from '../contexts/Auth'
+import SubmitButton from '../form/SubmitButton';
+import ButtonLink from '../layouts/ButtonLink';
+import Container from '../layouts/Container';
 
 
 function Products() {
@@ -36,18 +39,19 @@ function Products() {
     }, [token]); 
 
     return(
-        <div className={styles.dashcontainer}>
+        <div className={styles.productsContainer}>
             <Navbar />
-            <div className={styles.header}>
-            <div className={styles.prodct_header}>
+            <div className={styles.productsMain}>
+            <div className={styles.productsHeader}>
             <h3>Meus produtos</h3>
             <Button text="Aplicar filtros"
-            icon = <MdOutlineFilterList/>
+            icon = <MdOutlineFilterList/> variant="transparent"
             />
             <Button to="/products/new" text="Adicionar produto" 
-            icon = <MdAdd/>
+            icon = <MdAdd/> variant="default"
             />
             </div>
+            <div className={styles.productsList}>
             {product.map((prod) => (
                         <Product 
                             key = {prod.id}
@@ -58,6 +62,7 @@ function Products() {
                             price={prod.price} 
                         />
                     ))}
+            </div>
             </div>
         </div>
     )

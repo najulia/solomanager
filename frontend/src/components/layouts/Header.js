@@ -28,7 +28,7 @@ function Header() {
         {token ? (
                     <>
                         <ButtonLink to="/me/products" text="Meus produtos" />
-                        <SubmitButton to="/" text="Logout" onClick={handleLogout} />
+                        <SubmitButton to="/" text="Logout" onClick={handleLogout} variant="default" />
                     </>
                 ) : (
                     <ButtonLink to="/login" text="Entrar na conta" />

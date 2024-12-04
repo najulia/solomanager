@@ -4,6 +4,10 @@ import styles from "./NewProduct.module.css";
 import {useRef, useState} from 'react';
 import Api from "../../services/Api";
 import { useNavigate } from 'react-router';
+import Footer from "../layouts/Footer";
+import NewProductImg from "../../media/newproduct.svg"
+import Container from "../layouts/Container";
+import ButtonLink from "../layouts/ButtonLink";
 
 function NewProduct() {
     const inputName = useRef();
@@ -50,15 +54,27 @@ function NewProduct() {
 }
 
     return(
-        <form className={styles.form}>
-            <h1>Cadastrar produto novo</h1>
+        <>
+        <Container>
+            <div className={styles.newProductContainer}>
+            <div className={styles.imgContainer}>
+            <img src={NewProductImg} alt="form illustration" />
+            </div>
+            <div className={styles.formContainer}>
+            <form className={styles.form}>
+            <h3>Cadastrar produto novo</h3>
             < Input type="text" placeholder="Titulo aqui" name="name" text="Nome do produto" ref={inputName}/>
             < Input type="text" placeholder="Categoria aqui" name="category" text="Categoria" ref={inputCategory}/>
             < Input type="number" placeholder="Quantidade aqui" name="stock" text="Em estoque" ref={inputUnits}/>
             < Input type="number" placeholder="Preço aqui" name="price" text="Preço (R$)" ref={inputPrice}/>
             < Input type="text" placeholder="Imagem aqui" name="picture" text="Imagem" ref={inputPicture}/>
-            < SubmitButton onClick={createProduct} text="Cadastrar produto"/>
+            < SubmitButton onClick={createProduct} text="Cadastrar produto" variant="default"/>
+            <ButtonLink to="/me/products" text="Voltar" variant="transparent" />
         </form>
+            </div>
+           </div>
+            </Container>
+        </>
     )
     
 }

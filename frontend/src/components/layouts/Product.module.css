@@ -1,17 +1,17 @@
 .listProduct{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #5A97BF;
-    margin: 1em;
+    background-color: #455680; 
     list-style-type: none;
 }
 
 .listProduct li{
-    margin-right: 1em;
-    padding: 1em;
+    margin-right: 2em;
+    padding: 0.5em;
     color: white;
     text-align: center;
+    font-size: 0.8em;
 }
 
 .listProduct li a {
