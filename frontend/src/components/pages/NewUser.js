@@ -65,7 +65,7 @@ function NewUser() {
                      onChange={(e) => setPassword(e.target.value)}/>
                      
                      < Input type="text" name="role" 
-                    placeholder="Valores aceitos: Admin, Editor, Viewer" 
+                    placeholder="Admin, Editor or Viewer" 
                     text="Cargo" 
                     value= {role}
                     onChange={(e) => {
@@ -75,8 +75,8 @@ function NewUser() {
                     {error && <p className={styles.error}>{error}</p>}
 
                     <div className={styles.formBtn}>
-                    <SubmitButton text="Cadastrar"/>
-                    <ButtonLink to="/login" text="Já tenho uma conta" />
+                    <SubmitButton text="Cadastrar" variant="default"/>
+                    <ButtonLink to="/login" text="Já tenho uma conta" variant="transparent"/>
                     </div>
                 </form>
             </main>

@@ -1,42 +1,26 @@
-.navbar{
-    background-color: #3C96FF;
-    color: white;
+.navbarContainer{
     width: 15%;
+    background-color: #3760BF;
+    color: white;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
 
-.navbar img{
-    padding: 1em;
 }
-
-.list{
+.navbarContainer ul{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 0;
+    width: 100%;
 }
 
-.item {
-    color: white;
-    margin: 1em;
-    text-decoration: none;
-    text-align: center;
-    transition: 0.5s;
+
+.profileIcon{
+    font-size: 4em;
+    margin-bottom: 50%;
 }
 
-.item:hover{
-    background-color: #5A97BF;
-    color: white;
-    padding: 0.5em; 
-    width: 124px;
-}
-
-.item:focus {
-    background-color: #5A97BF;
-    width: 124px;
-    padding: 0.5em; 
-    font-weight: 600;
-  }

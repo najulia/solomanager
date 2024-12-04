@@ -1,36 +1,43 @@
 .submitBtn{
-        color: white;
-        background-color: #0B56FF; 
-        cursor: pointer;
-        border: none;
-        outline: none;
-        transition: 0.5s;
-        text-decoration: none;
-        box-sizing: border-box;
-    }
+color: white;
+background-color: #0B56FF; 
+cursor: pointer;
+border: none;
+outline: none;
+transition: 0.5s;
+text-decoration: none;
+box-sizing: border-box;
+}
 
-    .submitBtn:hover{
-        padding: 0.1em;
-        background-color: #FFB60A;
-    }
+.submitBtn:hover{
+padding: 0.1em;
+background-color: #FFB60A;
+}
 
-    .default{
-        background-color: #3760BF;
-        color: white;
-    }
-    
-    .transparent {
-        background-color: transparent;
-        color: #3760BF;
-        border: 1px solid #007bff;
-    }
-    
-    .default-big{
-        font-size: 1.2em;
-        width: 20%;
-        background-color: #3760BF;
-        color: white;
-    
-    }
+.default{
+background-color: #3760BF;
+color: white;
+}
+
+.transparent {
+background-color: transparent;
+color: #3760BF;
+border: 1px solid #007bff;
+}
+
+.default-big{
+font-size: 1.2em;
+width: 20%;
+background-color: #3760BF;
+color: white;
+
+}
+
+.default-small{
+    font-size: 0.7em;
+    background-color: #3760BF;
+    color: white;
+    font-weight: 500;
+}
 
     
