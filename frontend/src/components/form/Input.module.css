@@ -4,13 +4,21 @@
     background-color: white;
     color: black;
     padding: 1em;
-    width: 20em;
+    width: 100%;
     text-align: center;
     max-height: 1em;
+    border: 1.2px solid #0B56FF;
+    outline: transparent;
 }
 
 .label{
     font-size: 0.8em;
     font-weight: 600;
     margin: 0.2em;
+    color: #3760BF;
+}
+
+.input::placeholder{
+    font-size: 0.8em;
+    text-align: center;
 }

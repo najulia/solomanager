@@ -7,6 +7,8 @@ import ButtonLink from "../layouts/ButtonLink"
 import { useState } from "react"
 import { useAuth } from "../contexts/Auth"
 import { useNavigate } from "react-router";
+import Container from "../layouts/Container"
+import LoginImg from "../../media/access.svg"
 
 
 function Login() {
@@ -31,14 +33,15 @@ function Login() {
     return(
         <>
             <Header />
-            <main className={styles.loginContainer}>
-                <div className={styles.loginImg}>
-                <img src="https://placehold.co/280x400" alt="form illustration" />
+            <Container>
+                <div className={styles.loginContainer}>
+                <div className={styles.imgContainer}>
+                <img src={LoginImg} alt="form illustration" />
                 </div>
+                <div className={styles.formContainer}>
                 <form onSubmit={handleSubmit}>
                     <div className={styles.formTitle}>
-                    <h3>Gerencie seus produtos com facilidade e 
-                    <strong> controle total</strong></h3>
+                    <h3>Entre em sua conta para começar</h3>
                     </div>
                     < Input type="text" name="email" 
                     placeholder="Digite seu e-mail" 
@@ -57,11 +60,13 @@ function Login() {
                     {error && <p className={styles.error}>{error}</p>}
 
                     <div className={styles.formBtn}>
-                    <SubmitButton text="Fazer login"/>
-                    <ButtonLink to="/singup" text="Ainda não tenho conta" />
+                    <SubmitButton text="Fazer login" variant="default"/>
+                    <ButtonLink to="/singup" text="Ainda não tenho conta" variant="transparent" />
                     </div>
                 </form>
-            </main>
+                </div>
+               </div>
+                </Container>
             <Footer />
         </>
     )

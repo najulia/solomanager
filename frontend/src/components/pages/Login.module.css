@@ -15,41 +15,31 @@
     margin: 1em;
     gap: 1em; 
   }
-  
-  /* loginImg */
-  .loginImg {
-    margin: 1em;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .loginImg img {
-    width: 100%;
-    max-width: 280px; /* Ajusta a largura da imagem */
-  }
-  
-  /* formTitle */
+
+.imgContainer  {
+    width: 25%;
+    overflow: hidden; 
+    position: relative;
+}
+
+.imgContainer img {
+    width: 100%; 
+ } 
+
   .formTitle {
-    margin-bottom: 1.5em;
     text-align: center;
-    width: 80%;
+    width: 100%;
+    color: #3760BF;
   }
-  
-  /* Mensagem de erro */
   .error {
     color: red;
     font-size: 0.9em;
     margin-top: 0.5em;
     text-align: center;
   }
-  
-  /* formBtn */
+
   .formBtn {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }

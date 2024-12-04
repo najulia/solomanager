@@ -1,21 +1,36 @@
 .submitBtn{
-        padding: 0.3em;
         color: white;
-        background-color: #5A97BF;
+        background-color: #0B56FF; 
         cursor: pointer;
         border: none;
         outline: none;
         transition: 0.5s;
         text-decoration: none;
-        font-weight: 600;
-        max-height: 100%;
-        max-width: 100%;
-        
+        box-sizing: border-box;
     }
 
     .submitBtn:hover{
-        padding: 0.5em;
-        background-color: #265a7c;
+        padding: 0.1em;
+        background-color: #FFB60A;
+    }
+
+    .default{
+        background-color: #3760BF;
+        color: white;
+    }
+    
+    .transparent {
+        background-color: transparent;
+        color: #3760BF;
+        border: 1px solid #007bff;
+    }
+    
+    .default-big{
+        font-size: 1.2em;
+        width: 20%;
+        background-color: #3760BF;
+        color: white;
+    
     }
 
     

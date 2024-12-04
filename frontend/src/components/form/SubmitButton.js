@@ -1,8 +1,11 @@
 import styles from "./SubmitButton.module.css"
 
-function SubmitButton({onClick, text}) {
+function SubmitButton({onClick, text, variant}) {
+
+    const classNames = `${styles.submitBtn} ${styles[variant] || ""}`;
     return(
-            <button className={styles.submitBtn} type="submit" onClick={onClick}>{text}</button>
+            <button type="submit" 
+            className={classNames} onClick={onClick}>{text}</button>
     )
 }
 
