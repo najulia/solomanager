@@ -1,0 +1,42 @@
+.navbar{
+    background-color: #3C96FF;
+    color: white;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar img{
+    padding: 1em;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    color: white;
+    margin: 1em;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.item:hover{
+    background-color: #5A97BF;
+    color: white;
+    padding: 0.5em; 
+    width: 124px;
+}
+
+.item:focus {
+    background-color: #5A97BF;
+    width: 124px;
+    padding: 0.5em; 
+    font-weight: 600;
+  }

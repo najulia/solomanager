@@ -1,0 +1,11 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.icon{
+    font-size: 1.2em;
+}

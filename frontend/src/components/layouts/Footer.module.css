@@ -1,0 +1,16 @@
+.footer{
+    background-color: #5A97BF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.social{
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    font-size: 1.3em;
+    cursor: pointer;
+}

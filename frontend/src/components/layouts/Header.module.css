@@ -1,0 +1,19 @@
+.header{
+    background-color: #3C96FF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.headerLinks{
+    display: flex;
+    padding: 2em;
+    margin-right: 1em;
+    gap: 2em;
+}

@@ -1,0 +1,11 @@
+.containerAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.aboutCards{
+    display: flex;
+    margin: 1em;
+}

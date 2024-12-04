@@ -1,0 +1,19 @@
+.btn{
+    color: #44B5EB;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 0.7em;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0.3em;
+    font-weight: 500;
+}
+
+.btn:hover{
+    padding: 0.4em;
+    background-color: #265a7c;
+    color: white;
+}

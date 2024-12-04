@@ -1,0 +1,16 @@
+.input{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 1em;
+    width: 20em;
+    text-align: center;
+    max-height: 1em;
+}
+
+.label{
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 0.2em;
+}

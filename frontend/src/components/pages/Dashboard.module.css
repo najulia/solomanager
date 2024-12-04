@@ -1,0 +1,13 @@
+.dashcontainer{
+    display: flex;
+    align-items: flex-start;
+}
+
+.header{
+    padding: 0.5em;
+    margin: 2em;
+}
+
+.header h3{
+    color: #1C3D63; 
+}

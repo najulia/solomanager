@@ -1,0 +1,32 @@
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    height: 80vh;
+}
+
+.loginContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    height: 80vh;
+}
+
+.formBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    gap: 1em;
+    width: 100%;
+  }
+
+.formTitle {
+    margin-bottom: 1.5em;
+    text-align: center;
+    width: 80%;
+  }
