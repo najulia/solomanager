@@ -1,11 +1,27 @@
-.containerAbout{
+.sectionAbout{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin: 2em;
+    margin: 5em;
 }
 
-.aboutCards{
-    display: flex;
+.aboutText{
+    margin: 1em;
+    width: 50%;
+}
+
+.containerImg{
+    width: 50%;
+    height: 350px; 
+    overflow: hidden; 
+    position: relative;
     margin: 1em;
 }
+
+.containerImg img {
+    width: 100%; 
+    height: auto; 
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+ } 

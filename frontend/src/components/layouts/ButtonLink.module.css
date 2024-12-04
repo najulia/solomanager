@@ -1,5 +1,5 @@
 .btn{
-    color: #44B5EB;
+    color: white;
     cursor: pointer;
     border: none;
     outline: none;
@@ -10,10 +10,30 @@
     max-width: 100%;
     padding: 0.3em;
     font-weight: 500;
+    text-align: center;
 }
 
 .btn:hover{
     padding: 0.4em;
-    background-color: #265a7c;
+    background-color: #455680;
     color: white;
+}
+
+.default{
+    background-color: #3760BF;
+    color: white;
+}
+
+.transparent {
+    background-color: transparent;
+    color: #3760BF;
+    border: 1px solid #007bff;
+}
+
+.default-big{
+    font-size: 1.2em;
+    width: 20%;
+    background-color: #3760BF;
+    color: white;
+
 }

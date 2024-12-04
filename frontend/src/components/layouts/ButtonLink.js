@@ -3,10 +3,11 @@ import { Link} from "react-router";
 
 
 
-function ButtonLink({text, icon, to}) {
+function ButtonLink({text, icon, to, variant = "default"}) {
+    const classNames = `${styles.btn} ${styles[variant] || ""}`;
 
     return(
-            <Link to={to} className={styles.btn}>{text} {icon}</Link>
+            <Link to={to} className={classNames}>{text} {icon}</Link>
     )
     
 }

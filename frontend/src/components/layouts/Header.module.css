@@ -1,5 +1,5 @@
 .header{
-    background-color: #3C96FF;
+    background-color: #3760BF;
     display: flex;
     justify-content: space-between;
 }
@@ -16,4 +16,9 @@
     padding: 2em;
     margin-right: 1em;
     gap: 2em;
+    color: white;
+}
+
+.logo{
+    max-width: 100px;
 }

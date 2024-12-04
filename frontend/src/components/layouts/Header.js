@@ -3,6 +3,7 @@ import SubmitButton from "../form/SubmitButton"
 import ButtonLink from "../layouts/ButtonLink"
 import { useAuth } from '../contexts/Auth'
 import { useNavigate } from 'react-router'
+import Logo from '../../media/logo branco.png'
 
 function Header() {
     
@@ -19,11 +20,11 @@ function Header() {
         <header className={styles.header}>
             
             <a href='/'>
-            <img src="https://placehold.co/100x50" alt="logo" />
+            <img src={Logo} alt="logo" className={styles.logo} />
             </a>
        
         <div className={styles.headerLinks}>
-        <ButtonLink to="/" className={styles.buttonLink} text="Sobre" />
+        <ButtonLink to="/" className={styles.buttonLink} text="Home" />
         {token ? (
                     <>
                         <ButtonLink to="/me/products" text="Meus produtos" />

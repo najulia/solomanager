@@ -4,18 +4,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1em;
 }
 
 .divBanner{
-    width: 100vw;
-    max-height: 200px;
+    width: 100%;
+    height: 250px; 
+    overflow: hidden; 
+    position: relative;
+    margin-bottom: 2em;
 }
 
-.divBanner img{
-    width: 100%;
-    height: 100vh;
-}
+.divBanner img {
+    width: 100%; 
+    height: auto; 
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+ } 
 
 .main p {
     font-weight: 500;

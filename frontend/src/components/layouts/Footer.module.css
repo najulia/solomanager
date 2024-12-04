@@ -1,9 +1,9 @@
 .footer{
-    background-color: #5A97BF;
+    background-color: #3760BF;
     color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     padding: 1em;
 }
 
@@ -11,6 +11,10 @@
     padding: 1em;
     display: flex;
     gap: 1em;
-    font-size: 1.3em;
+    font-size: 1.5em;
     cursor: pointer;
+}
+
+.logo{
+    max-width: 100px;
 }

@@ -1,31 +1,27 @@
 import styles from './About.module.css'
+import Container from './Container';
 import HomeCard from './HomeCard';
-import { MdOutlineManageAccounts } from "react-icons/md";
+import ImgHome from "../../media/img-home.jpg";
 
 
 function About() {
 
     return(
-        <section id="about" className={styles.containerAbout}>
-        <h1> Sobre nós </h1>
-        <p>O Solo Manager é uma ferramenta inovadora desenvolvida para tornar a gestão de produtos mais 
-            simples, eficiente e organizada. Se você já enfrentou desafios como manter o controle do estoque, 
-            acompanhar vendas, ou analisar o desempenho de seus produtos, o Solo Manager é a solução ideal.</p>
-            <img src="https://placehold.co/1280x400" />
-            <h2>O que você pode esperar </h2>
-        <div className={styles.aboutCards}>
-
-           <HomeCard text="Atualize e acompanhe seus produtos em tempo real, evitando 
-                      erros e surpresas indesejadas." icon = {<MdOutlineManageAccounts />}
-                       title="Facilidade no controle de estoque:"/>
-             <HomeCard text="Atualize e acompanhe seus produtos em tempo real, evitando 
-                      erros e surpresas indesejadas." icon = {<MdOutlineManageAccounts />}
-                       title="Facilidade no controle de estoque:"/>
-             <HomeCard text="Atualize e acompanhe seus produtos em tempo real, evitando 
-                      erros e surpresas indesejadas." icon = {<MdOutlineManageAccounts />}
-                       title="Facilidade no controle de estoque:"/>
-        </div>
-        </section>
+        <Container>
+            <div className={styles.sectionAbout}>
+                <div className={styles.aboutText}>
+                <h2>Somos parceiros do seu negócio</h2>
+                <p>O SoloManager foi projetado para atender pequenas empresas e comerciantes autônomos. 
+                Com ferramentas simples e eficientes, facilitamos a gestão de vendas, estoque, finanças 
+                e muito mais, tudo em um só lugar. Nosso objetivo é empoderar pequenos negócios com 
+                tecnologia de qualidade, ajudando você a economizar tempo, organizar processos e 
+                focar no que realmente importa: <strong>o crescimento do seu negócio.</strong></p>
+                </div>
+                <div className={styles.containerImg}>
+                    <img src={ImgHome} alt="Imagem de um quebra-cabeças se encaixando" loading="lazy" />
+                </div>
+                </div>
+        </Container>
     )
     
 } export default About;
