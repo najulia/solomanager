@@ -8,6 +8,7 @@ import { AuthProvider } from "./components/contexts/Auth";
 import NewUser from "./components/pages/NewUser";
 import EditProduct from "./components/pages/EditProduct";
 import PrivateRoutes from "./routes/PrivateRoutes";
+import MyOrders from "./components/pages/MyOrders";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/products/new" element={<NewProduct />} />
       <Route path="/products/:id" element={<EditProduct />} />
       <Route path="/singup" element={<NewUser />} />
+      <Route path="/me/orders" element={<PrivateRoutes><MyOrders /></PrivateRoutes>} />
       
       <Route path="/login" element={<Login />} />
     </Routes>

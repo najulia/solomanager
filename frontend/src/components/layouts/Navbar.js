@@ -30,6 +30,7 @@ function Navbar() {
                 <ButtonLink to="/me" text="Painel" variant='default'></ButtonLink>
                 <ButtonLink to={`/me/products`} text="Produtos" variant='default'></ButtonLink>
                 <ButtonLink to={`/`} text="Ir pra home" variant='default'></ButtonLink>
+                <ButtonLink to={`/me/orders`} text="Ver Pedidos" variant='default'></ButtonLink>
                 <SubmitButton text="Sair da conta" onClick={handleLogout} variant='default-small'></SubmitButton>
                 </ul>
             </div>

@@ -1,0 +1,24 @@
+.listProduct{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #455680; 
+    list-style-type: none;
+}
+
+.listProduct li{
+    margin-right: 2em;
+    padding: 0.5em;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.listProduct li a {
+    color: white;
+}
+
+.editBtn:hover{
+    color:yellow;  
+    cursor: pointer
+}

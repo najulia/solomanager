@@ -1,0 +1,33 @@
+.productsContainer{
+    display: flex;
+    align-items: flex-start;
+}
+
+.productsMain{
+    width: 100vw;
+    padding: 0.5em;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+.productsMain h3{
+    color: #3760BF; 
+}
+    
+
+.productsHeader{
+    gap: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+
+}
+
+.productsList{
+    width: 100%;
+}
