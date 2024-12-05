@@ -7,7 +7,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 
-<img src="https://s7.ezgif.com/tmp/ezgif-7-0facc7ebc4.gif" alt="Exemplo imagem">
+![ezgif-7-0facc7ebc4](https://github.com/user-attachments/assets/053c760c-d605-4fb4-80f0-a0df499f2fc8)
 
 > Projeto desenvolvido para a disciplina de Software Product no curso de Análise e Desenvolvimento de Sistemas.
 > O SoloManager é um ERP voltado para pequenas empresas e comerciantes autônomos, oferecendo ferramentas práticas para gestão de vendas, estoque e finanças.
