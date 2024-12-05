@@ -39,15 +39,19 @@ class Product(Base):
 
     order_products: Mapped[List["Order"]] = relationship("Order", back_populates="product", 
                                                          cascade="all, delete-orphan")
+    
+    def calculate_remaining_stock(self):
+        total_sold = sum(order.quantity for order in self.order_products)
+        self.stock -= total_sold
 
 class Order(Base):
     __tablename__ = 'orders'
 
     id: Mapped[int] = mapped_column(primary_key=True, index=True)
-    client_name: Mapped[str] = mapped_column(String(255), nullable=False)
-    client_phone: Mapped[str] = mapped_column(String(255), nullable=False, unique=True)
+    customer_name: Mapped[str] = mapped_column(String(255), nullable=False)
+    customer_phone: Mapped[str] = mapped_column(String(255), nullable=False)
     payment_method: Mapped[str] = mapped_column(String(255), nullable=False)
-    payment_status: Mapped[str] = mapped_column(String(255))
+    payment_status: Mapped[str] = mapped_column(String(255), default="em análise")
     quantity: Mapped[int] = mapped_column(nullable=False)
     total: Mapped[float] = mapped_column(Float(), nullable=True)
 
@@ -68,14 +72,15 @@ class Order(Base):
     def validate_client_name_field(self, key, value):
         return order_validators.validate_client_name(value)
 
-    # Método para calcular o total do pedido
+
     def calculate_total(self):
         if self.product and self.quantity:
+            print(f"Produto: {self.product.name}, Quantidade: {self.quantity}, Preço: {self.product.price}")
             self.total = self.quantity * self.product.price
         else:
-            self.total = 0.0  # Defina como 0.0 se o cálculo não for possível
+            self.total = 0.0  
 
-    # Construtor para inicializar e calcular o total automaticamente
+    
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.calculate_total()

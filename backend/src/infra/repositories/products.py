@@ -19,6 +19,7 @@ class ProductRepo():
             picture = product.picture, 
             user_id=product.user_id
         )
+
         self.db.add(db_product)
         self.db.commit()
         self.db.refresh(db_product)

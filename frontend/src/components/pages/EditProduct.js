@@ -132,8 +132,8 @@ function EditProduct() {
 
             {error && <p className={styles.error}>{error}</p>}
 
-            <SubmitButton text="Salvar alterações" />
-            <SubmitButton text="Excluir permanentemente" onClick={deleteProduct} />
+            <SubmitButton text="Salvar alterações" variant="default"/>
+            <SubmitButton text="Excluir permanentemente" onClick={deleteProduct} variant="default" />
             <ButtonLink to="/me/products" text="Voltar" variant="transparent" />
         </form>
             </div>

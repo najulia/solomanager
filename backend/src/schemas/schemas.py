@@ -38,24 +38,22 @@ class Product(BaseModel):
 
 class Order(BaseModel): 
     id: Optional[int] = None
-    client_name: str
-    client_phone: str
+    customer_name: str
+    customer_phone: str
     payment_method: str
     payment_status: str
     quantity: int
-    product: Product
-    product_id: Optional[int]
+    product_id: int
 
     class Config:
         orm_mode = True 
 
 class OrderPublic(BaseModel): 
     id: Optional[int] = None
-    client_name: str
-    client_phone: str
+    customer_name: str
+    customer_phone: str
     payment_method: str
     payment_status: str
     quantity: int
     total: float 
     product: Optional[Product]
-    product_id: Optional[int]
