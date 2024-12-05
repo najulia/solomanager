@@ -21,7 +21,7 @@ function MyOrders() {
 
   async function getUserOrders() {
         try {
-            const response = await Api.get(`/orders`, {
+            const response = await Api.get(`/me/orders`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

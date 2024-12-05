@@ -38,3 +38,6 @@ class UserRepo():
     
     def get_user_products(self, id_user: int):
         return self.db.query(models.Product).filter(models.Product.user_id == id_user).all()
+    
+    def get_user_orders(self, id_user: int):
+        return self.db.query(models.Order).filter(models.Order.user_id == id_user).all()

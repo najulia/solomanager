@@ -44,6 +44,7 @@ class Order(BaseModel):
     payment_status: str
     quantity: int
     product_id: int
+    user_id: Optional[int] = None
 
     class Config:
         orm_mode = True 

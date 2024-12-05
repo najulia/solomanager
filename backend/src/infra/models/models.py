@@ -19,6 +19,9 @@ class User(Base):
 
     user_products: Mapped[List["Product"]] = relationship("Product", back_populates="owner",
                                                        cascade="all, delete-orphan")
+    
+    user_orders: Mapped[List["Order"]] = relationship("Order", back_populates="user", 
+                                                      cascade="all, delete-orphan")
 
     @validates("role")
     def check_role(self, key, value):
@@ -57,6 +60,9 @@ class Order(Base):
 
     product_id: Mapped[int] = mapped_column(ForeignKey("products.id"))
     product: Mapped[Product] = relationship("Product", back_populates="order_products")
+
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"))
+    user: Mapped[User] = relationship("User", back_populates="user_orders")
 
 #VALIDAÇÕES DO MODELO DE PEDIDOS
 

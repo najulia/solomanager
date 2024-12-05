@@ -66,6 +66,11 @@ def list_my_products(current_user: schemas.User = Depends(get_current_user), db:
     products = db.query(models.Product).filter(models.Product.user_id == current_user.id).all()
     return products
 
+@router.get('/me/orders', response_model=list[schemas.OrderPublic])
+def list_my_orders(current_user: schemas.User = Depends(get_current_user), db: Session = Depends(get_db)):
+    orders = db.query(models.Order).filter(models.Order.user_id == current_user.id).all()
+    return orders
+
 @router.get("/test-auth")
 async def test_auth(current_user = Depends(get_current_user)):
     return {

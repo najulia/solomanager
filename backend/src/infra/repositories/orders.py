@@ -26,6 +26,7 @@ class OrderRepo():
             payment_status = order.payment_status,
             quantity = order.quantity, 
             product_id = order.product_id, 
+            user_id = order.user_id,
         )
         db_order.product = product
         db_order.calculate_total()
